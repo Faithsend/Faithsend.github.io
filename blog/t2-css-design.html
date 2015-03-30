@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>CSS Design</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <header>Matt Faliszek's Blog Posts
+  <nav>
+    <a href="#"><button class="navbutton">About</button></a>
+    <a href="blog-index.html"><button class="navbutton">Blog</button></a>
+    <a href="#"><button class="navbutton">Projects</button></a>
+    <a href="#"><button class="navbutton">Contact</button></a>
+  </nav>
+  </header>
+  <div ID="info-container">
+    <div ID="title">
+      <!--Post Title goes here!-->
+      CSS Design
+    </div>
+      <div ID="subtitle">
+        <!--Subtitle goes here!-->
+        Classes versus IDs
+      </div>
+      <div ID="date">
+        <!--Date goes here!-->
+       March 29, 2015
+      </div>
+  </div>
+
+<section>
+<!--Blog Post goes here!-->
+  <p>Apologies in advance if this comes across as a little incoherent, but this is coming after a hard week of HTML and CSS.
+  </p>
+  <p>
+    Classes and IDs may seem very interchangeable, given they're both even more specific attributes to add to tags in order to specify style. They tell the stylesheet to look for a specific name for the tag, so that, for example, you can two div tags with very different style attributes, so long as they both belong to different IDs or classes.
+  </p>
+  <p>
+    The chief difference is that an ID should only be used once on the page, while a class can be reused multiple times on the same web page. This isn't just a matter of practices and custom, but it actually matters for the HTML validation.
+    </p>
+    <p>
+      The reason for this is that IDs are assigned Hash values (named after hash marks, not the computer science term). Hash values are an in-page navigational aid, like assigning a heading to the section. It lets you link to later down the page, or link to a specific section of a page when setting up the addresses.
+    </p>
+    <p>
+      Other than this navigational aid, a class and ID are treated exactly the same by CSS, and they don't require any other formatting.
+  <footer>
+      <a href="c1-chefs-kitchen.html"><button id="footerLeft"> Previous </button></a>
+      <a href="blog-index.html"><button id="footerCenter"> Index </button></a>
+      <a href="#"><button id="footerRight"> Next </button></a>
+  </footer>
+  </section>
+
+</body>
+
