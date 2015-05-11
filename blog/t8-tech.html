@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <header>Matt Faliszek's Blog Posts
+  <nav>
+    <a href="#"><button class="navbutton">About</button></a>
+    <a href="blog-index.html"><button class="navbutton">Blog</button></a>
+    <a href="#"><button class="navbutton">Projects</button></a>
+    <a href="#"><button class="navbutton">Contact</button></a>
+  </nav>
+  </header>
+  <div ID="info-container">
+    <div ID="title">
+      <!--Post Title goes here!-->
+      Recursion
+    </div>
+      <div ID="subtitle">
+        <!--Subtitle goes here!-->
+        The Importance of Calling Yourself
+      </div>
+      <div ID="date">
+        <!--Date goes here!-->
+       May 10, 2015
+      </div>
+  </div>
+
+<section>
+<!--Blog Post goes here!-->
+  <p>Recursion is an very widespread and important component of programming languages and computer science, because of their value in solving problems. The gist of recursion is that a problem can be broken into smaller problems, which can all be solved by applying the same general solution to these smaller problems, and thus the overall solution is created out of the smaller solutions. While this may seem a bit complicated when phrased this way, it becomes easier to understand when seen practically.
+  </p>
+  <p> Most commonly, recursion occurs when a method or function is able to call itself, which usually runs on a smaller variation on the original input. The code will essentially stop the function and restart it with the smaller input, while still holding onto the data from the previous and larger variations on that input. Once the inputs reach a certain condition, the function or method will finally be allowed to run to completion for that smallest variation, then allowed to proceed on the next larger, and then so on until the original call of the function is allowed to proceed.
+  </p>
+  <p> This may seem similar to the idea of iteration while in loops, and indeed it truthfully is--some languages that don't include loops explicitly designed with 'for' and 'while' constructors will actually iterate by using recursion to reach the same solution. While the difference between the two is beyond the scope of this blog post, it is interesting to note that recursion can replace iteration by using tail recursion, and iteration may replace recursion by the implementation of an explicit stack to hold previous variations.
+  </p>
+  <p> The easiest way to understand recursion is by modeling the solution of a number's factorial. The factorial is defined as the product of every number between 1 and the given number. so for 10!, the solution is 10 x 9 x 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1 = 3,628,800. To write this differently, the factorial of <em> n </em> is equal to <em>n x (n-1) x (n-2) ... x 1 </em>. To solve this recursively, we can determine n-1, n-2, and so on by calling the function over and over again, using a smaller n each time.
+    <br>
+    <code> def factorial(n) <br>
+    &emsp; return 1 if n == 0 <br>
+    &emsp; return n * factorial(n - 1)<br>
+end <br> </code>
+  So starting at 5, it'd call the factorial repeatedly until n was 0, at which point the function would return the value of 1. the next level up, it'd multiply 1 (because at this step of recursion, n is 1) by the value of factorial(0) (which is 1). One level up from there, it'd multiply 2 by 1, and so on until n finally is 5, and thus it returns 5 times 24, or 120.
+  </p>
+  <footer>
+      <a href="c7-values.html"><button id="footerLeft"> Previous </button></a>
+      <a href="blog-index.html"><button id="footerCenter"> Index </button></a>
+      <a href="c8-conflict.html"><button id="footerRight"> Next </button></a>
+  </footer>
+  </section>
+
+</body>
+
