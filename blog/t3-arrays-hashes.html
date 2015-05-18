@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays and Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <header>Matt Faliszek's Blog Posts
+  <nav>
+    <a href="#"><button class="navbutton">About</button></a>
+    <a href="blog-index.html"><button class="navbutton">Blog</button></a>
+    <a href="#"><button class="navbutton">Projects</button></a>
+    <a href="#"><button class="navbutton">Contact</button></a>
+  </nav>
+  </header>
+  <div ID="info-container">
+    <div ID="title">
+      <!--Post Title goes here!-->
+      Arrays and Hashes
+    </div>
+      <div ID="subtitle">
+        <!--Subtitle goes here!-->
+        Making a Hash of Things
+      </div>
+      <div ID="date">
+        <!--Date goes here!-->
+       April 5, 2015
+      </div>
+  </div>
+
+<section>
+<!--Blog Post goes here!-->
+  <p> Arrays and hashes are two of the more important and versatile data structures available in Ruby, able to quickly and easily traverse and transform large quantities of objects at once..
+  </p>
+  <p>
+    An array, simply put, is an ordered list of objects. Each object in an array is referenced by an integer value, known as the index. Thus the first item in an array is array[0], the second array[1], and so on (computers count using 0 as the starting point, rather than 1). New objects can be inserted into this array at various points, and it keeps them in that same order based on where the new object was added in. This makes it relatively easy to pull objects out again, based on the sequence in which they were added.
+    </p>
+    <p>
+      <code>
+        <p>numbers = [ 5, 6, 7, 8]</p>
+        <p>numbers[0] => 5 </p>
+        <p>numbers[2] => 7 </p>
+      </code>
+    <p>
+      A hash is similar to an array in that it represents a list of objects, but unlike an array it isn't ordered by integer values. Rather, instead of an index, it uses keys to associate with each value. This key can be any object, such as a string or an integer, and it associated only with one value. This is usually helpful where the values are referenced by a name or a non-ordered set of integers, where it wouldn't be useful or sensible to keep them in an ordered form.
+    </p>
+    <p>
+      <code>
+        <p>prices = {'cereal'=>3.95, 'chicken'=>6.75, 'milk'=>2.75}</p>
+        <p>prices[:cereal] => 3.95</p>
+        <p>prices[:milk] => 2.75</p>
+
+
+  <footer>
+      <a href="t2-css-design.html"><button id="footerLeft"> Previous </button></a>
+      <a href="blog-index.html"><button id="footerCenter"> Index </button></a>
+      <a href="c3-thinking-style.html"><button id="footerRight"> Next </button></a>
+  </footer>
+  </section>
+
+</body>
+

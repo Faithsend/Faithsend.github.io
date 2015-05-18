@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <header>Matt Faliszek's Blog Posts
+  <nav>
+    <a href="#"><button class="navbutton">About</button></a>
+    <a href="blog-index.html"><button class="navbutton">Blog</button></a>
+    <a href="#"><button class="navbutton">Projects</button></a>
+    <a href="#"><button class="navbutton">Contact</button></a>
+  </nav>
+  </header>
+  <div ID="info-container">
+    <div ID="title">
+      <!--Post Title goes here!-->
+      Javascript and Ruby
+    </div>
+      <div ID="subtitle">
+        <!--Subtitle goes here!-->
+        JavaScript Objects and Ruby Hashes
+      </div>
+      <div ID="date">
+        <!--Date goes here!-->
+       May 3, 2015
+      </div>
+  </div>
+
+<section>
+<!--Blog Post goes here!-->
+  <p> One of the more curious examples of differences between Ruby and Javascript is the Hash data structure. While Ruby officially supports a Hash structure, the same can't be said of Javascript. Instead, the implementation of Objects in Javascript serves the same function, though phrased and with slightly different features.
+  </p>
+  <p> Hashes in Ruby are an explicit data structure, storing values within it that correspond to specific keys. every key can be something different, like a string, an integer, an object, and so on. each key maps to a value, and the data structure as a whole can be traversed and iterated over using different Hash or enumerable methods.
+  </p>
+  <p> Javascript Objects work somewhat similarly, where Objects hold a collection of properties that each have their own value associated with it. This essentially works the same way as the key-value pairs in Ruby Hashes, where the value doesn't exist in the object until its assigned a valid property. Objects are slightly different though, in that they can incorporate their own methods as well as the data it includes. This means you can call included methods within the object if it doesn't need to be used with any other data structures or elsewhere in the program, so long as its associated with the Object itself. The Object can also easily be traversed and iterated over using their own methods, such as ForEach, or In, which iterate over property within the Object.
+  </p>
+
+
+  <footer>
+      <a href="c6-stereotype-threat.html"><button id="footerLeft"> Previous </button></a>
+      <a href="c7-values.html"><button id="footerCenter"> Index </button></a>
+      <a href="#"><button id="footerRight"> Next </button></a>
+  </footer>
+  </section>
+
+</body>
+

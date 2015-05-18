@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <header>Matt Faliszek's Blog Posts
+  <nav>
+    <a href="#"><button class="navbutton">About</button></a>
+    <a href="blog-index.html"><button class="navbutton">Blog</button></a>
+    <a href="#"><button class="navbutton">Projects</button></a>
+    <a href="#"><button class="navbutton">Contact</button></a>
+  </nav>
+  </header>
+  <div ID="info-container">
+    <div ID="title">
+      <!--Post Title goes here!-->
+      Ruby Classes
+    </div>
+      <div ID="subtitle">
+        <!--Subtitle goes here!-->
+        a RPG character as a Class
+      </div>
+      <div ID="date">
+        <!--Date goes here!-->
+       April 19, 2015
+      </div>
+  </div>
+
+<section>
+<!--Blog Post goes here!-->
+  <p> Classes are an extraordinarily powerful feature of Ruby, as befits its object-oriented design. Object-oriented languages create objects for the code to interact with, which include both variable attributes and methods which work together to define its function. Classes are a fairly standard approach to creating objects, where each class defines a set number of methods and variables, acting as a blueprint for further instances of that class to be created and manipulated with.
+  </p>
+  <p>Classes are extremely useful when dealing with sets of data that all follow the same basic principles and can be used in the same ways, but which might be different in their individual variables or designations. They provide a catalog of methods based on these commonalities, but which might reveal the specifics of each version of the object.
+  </p>
+  <p>While this may sound complicated in the abstract, it's a lot simpler to see how this works using a concrete example. Characters in role-playing games make for a good example of how these classes might work. Every character would be an object, which would be defined from the greater Class of <code>Character</code>. When we create a new character, we provide the class with a list of attributes, such as the character's <code>name</code>, <code>gender</code>, <code>level</code>, <code>species</code>, <code>profession</code>, <code>strength</code>, and so on. This new <code>Character</code> object would store all these variables as instance variables, which are constant for all methods that relate to this specific <code>Character</code> object. Anytime the <code>name</code> variable is referenced within the instance of <code>Character</code>, it will recall the same value.
+  </p>
+  <p> Now, let's add a method for calculating the value of a character's attack, based on its <code>strength</code> and a modifier. This modifier can be stored as a class variable, so that every <code>character</code> features the same modifier. This might be useful if we wanted to apply sweeping changes across every character, or if we wanted to set some baseline attributes for certain variables. Essentially, the difference is that every instance of a class will use the same class variables, while they would have different instance variables based on their object.
+  </p>
+  <p> With this class based construction, it can easily compare the outputs of the same methods from different <code> Characters</code>. It may run the same method to calculate the value of an attack for two different characters, and then use the comparison between them to decide who is more powerful, or who would win in a fight. By storing these attributes and methods in a related class, it becomes trivial to access them once more, or modify them as a character grows and changes.
+  <footer>
+      <a href="c4-tech-issues.html"><button id="footerLeft"> Previous </button></a>
+      <a href="blog-index.html"><button id="footerCenter"> Index </button></a>
+      <a href="c5-feedback.html"><button id="footerRight"> Next </button></a>
+  </footer>
+  </section>
+
+</body>
+
